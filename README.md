@@ -30,9 +30,10 @@ A sophisticated multi-agent AI system that validates business ideas through comp
 
 - **Python 3.8+**
 - **OpenAI GPT-4o-mini** for intelligent analysis
+- **OpenAI-Agent-SDK** For creating agentic workflows
 - **Pydantic** for data validation and serialization
 - **Async/await** for concurrent agent execution
-- **Web Search Tools** for real-time market data
+- **OPEN AI Web Search Tool** for real-time market data
 - **Jupyter Notebooks** for interactive development
 
 ## 📦 Installation
@@ -72,19 +73,8 @@ A sophisticated multi-agent AI system that validates business ideas through comp
 ### Basic Usage
 
 ```python
-from market_report.analysis_manager import AnalysisManager
-
-# Initialize the analysis manager
-manager = AnalysisManager()
-
-# Run comprehensive analysis
-async def analyze_idea():
-    async for status in manager.run("AI-powered journaling app"):
-        print(status)
-
-# Run the analysis
-import asyncio
-asyncio.run(analyze_idea())
+brew install uv
+uv run analysis.py
 ```
 
 ### Jupyter Notebook Example
@@ -113,34 +103,6 @@ class AnalysisManager:
     async def market_research_analysis(self, query: str) -> MarketResearchOutput
     async def financial_estimation(self, competitor_data, market_data) -> FinancialEstimationResult
     async def write_report(self, competitor_data, market_data, financial_data) -> BusinessReport
-```
-
-### Data Models
-
-#### Competitor Analysis
-```python
-class Competitor(BaseModel):
-    name: str
-    description: str
-    website: Optional[str]
-    strengths: List[str]
-    weaknesses: List[str]
-    pricing: Optional[str]
-    funding: Optional[str]
-    market_position: Optional[str]
-    threat_level: Optional[str]
-```
-
-#### Market Research
-```python
-class MarketResearchOutput(BaseModel):
-    market_size: str
-    growth_rate: str
-    key_trends: List[str]
-    major_players: List[str]
-    barriers_to_entry: List[str]
-    opportunities: List[str]
-    threats: List[str]
 ```
 
 ## 🔧 Configuration
