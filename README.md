@@ -158,14 +158,6 @@ source venv/bin/activate
 jupyter notebook idea.ipynb
 ```
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -175,12 +167,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - OpenAI for providing the GPT-4o-mini model
 - The open-source community for the excellent Python packages used in this project
 
-## 📞 Support
+## Sample Output
+<img width="2940" height="8142" alt="journal_app_report" src="https://github.com/user-attachments/assets/9bb368fe-92fd-4cf7-8a35-dc8656070ec1" />
 
-If you have any questions or need help:
+## Agent workflow
 
-- Open an [issue](https://github.com/kunal-manjunath/Market-research-multiagent/issues)
-- Check the [examples](idea.ipynb) for usage patterns
-- Review the agent configurations in the `market-report/` directory
-
----
+<img width="1305" height="543" alt="Screenshot 2025-08-21 at 3 40 48 PM" src="https://github.com/user-attachments/assets/739c9586-f4b3-49f2-9b25-bf0b69fec405" />
